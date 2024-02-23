@@ -15,6 +15,7 @@ func New(size uint, queue uint) *Pool {
 	return p
 }
 
+// Schedule 执行任务池
 func (p *Pool) Schedule(task func()) {
 	p.schedule(task)
 }
@@ -39,6 +40,7 @@ func (p *Pool) worker(task func()) {
 	}
 }
 
+// Stop 停止任务池
 func (p *Pool) Stop() {
 	close(p.sem)
 	close(p.works)
