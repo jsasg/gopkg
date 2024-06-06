@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jsasg/orico-uc-backend/pkg/queue/priority"
+	"github.com/jsasg/gopkg/queue/priority"
 )
 
 type DelayQueue struct {

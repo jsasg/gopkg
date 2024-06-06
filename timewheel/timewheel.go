@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/jsasg/orico-uc-backend/pkg/queue"
+	"github.com/jsasg/gopkg/queue"
 )
 
 // Task 任务
